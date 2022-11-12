@@ -9,15 +9,11 @@ module.exports = {
 
           secondary: "#19D3AE",
 
-          base: "#3A4256",
+          accent: "#3A4256",
 
-          info: "#3ABFF8",
+          neutral: "#221825",
 
-          success: "#36D399",
-
-          warning: "#FBBD23",
-
-          error: "#F87272",
+          "base-100": "#DFDDEE",
         },
       },
     ],

@@ -5,7 +5,9 @@ import "./Styles/App.css";
 function App() {
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      <main style={{ maxWidth: "1440px" , margin:"0 auto" }}>
+        <RouterProvider router={router}></RouterProvider>
+      </main>
     </>
   );
 }
