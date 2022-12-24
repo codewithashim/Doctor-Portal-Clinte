@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import tritments from "../../../assets/images/treatment.png";
 import CommonButton from "../../../Components/Buttons/CommonButton";
 
@@ -25,7 +26,9 @@ const Tritment = () => {
               here', making it look like readable English. Many desktop
               publishing packages and web page
             </p>
-            <CommonButton>GET STARTED</CommonButton>
+            <CommonButton>
+              <Link to="/apointment">GET STARTED</Link>
+            </CommonButton>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Chear from "../../../assets/images/chair.png";
 import HeroBg from "../../../assets/images/bg.png";
 import CommonButton from "../../../Components/Buttons/CommonButton";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -27,7 +28,9 @@ const Hero = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <CommonButton>GET STARTED</CommonButton>
+            <CommonButton>
+              <Link to="/apointment">GET STARTED</Link>
+            </CommonButton>
           </div>
         </div>
       </div>
