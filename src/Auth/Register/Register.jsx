@@ -62,7 +62,7 @@ const Register = () => {
   const saveUserInDB = (email, name, photoURL) => {
     const user = { email, name, photoURL };
     console.log(user);
-    fetch("http://localhost:8000/users", {
+    fetch("https://doctor-portal-server-phi.vercel.app/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

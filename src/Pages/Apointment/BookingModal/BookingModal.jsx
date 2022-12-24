@@ -27,7 +27,7 @@ const BookingModal = ({ tritment, selectedDate, setTritment, refetch }) => {
       price,
     };
 
-    fetch("http://localhost:8000/bookings", {
+    fetch("https://doctor-portal-server-phi.vercel.app/bookings", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

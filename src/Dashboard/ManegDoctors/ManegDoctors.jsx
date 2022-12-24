@@ -15,7 +15,7 @@ const ManegDoctors = () => {
   const { data: manegDoctor = [], isLoading, refetch } = useQuery({
     queryKey: ["manegDoctor"],
     queryFn: async () => {
-      const res = await fetch(`http://localhost:8000/doctors`, {
+      const res = await fetch(`https://doctor-portal-server-phi.vercel.app/doctors`, {
         headers: {
           authorization: `bearer ${localStorage.getItem("accesToken")}`,
         },
@@ -26,7 +26,7 @@ const ManegDoctors = () => {
   });
 
   const hendelDeleteDoctor = (id) => {
-    fetch(`http://localhost:8000/doctors/${id}`, {
+    fetch(`https://doctor-portal-server-phi.vercel.app/doctors/${id}`, {
       method: "DELETE",
       headers: {
         authorization: `bearer ${localStorage.getItem("accesToken")}`,

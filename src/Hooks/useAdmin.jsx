@@ -7,7 +7,7 @@ const useAdmin = () => {
   const { user } = useContext(AuthContext);
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:8000/users/admin/${user?.email}`)
+      fetch(`https://doctor-portal-server-phi.vercel.app/users/admin/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           setIsAdmin(data?.isAdmin);

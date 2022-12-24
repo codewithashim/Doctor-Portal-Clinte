@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const MyApointment = () => {
   const { user } = useContext(AuthContext);
-  // const url = `http://localhost:8000/bookings?email=${user?.email}`;
+  // const url = `https://doctor-portal-server-phi.vercel.app/bookings?email=${user?.email}`;
 
   const { data: bookings = [] } = useQuery({
     queryKey: ["bookings", user?.email],
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:8000/bookings?email=${user?.email}`,
+        `https://doctor-portal-server-phi.vercel.app/bookings?email=${user?.email}`,
         {
           headers: {
             authorization: `bearer ${localStorage.getItem("accesToken")}`,
